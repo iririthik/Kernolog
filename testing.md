@@ -529,46 +529,7 @@ Issues Found:
 Notes:
 [Additional observations]
 ```
-
----
-
-## Automated Testing (Future)
-
-For future test automation, consider:
-
-```bash
-#!/bin/bash
-# test_suite.sh
-
-echo "Testing Kernolog..."
-
-# Start system in background
-python3 db.py &
-PID=$!
-sleep 10
-
-# Generate test logs
-for i in {1..100}; do
-  logger "Automated test message $i"
-done
-
-sleep 15
-
-# Test query via stdin
-echo "test" | timeout 5 python3 -c "
-import sys
-sys.path.insert(0, '.')
-# Query testing code here
-"
-
-# Cleanup
-kill $PID
-wait $PID 2>/dev/null
-
-echo "Tests complete"
-```
-
----
+------
 
 ## Support
 
