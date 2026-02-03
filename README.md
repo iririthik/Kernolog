@@ -1,10 +1,10 @@
-# 🧠 Live Log Embedding System (journalctl → FAISS)
+# Live Log Embedding System (journalctl → FAISS)
 
 A real-time Linux log monitoring and semantic search tool that streams logs from `journalctl`, deduplicates repeated entries, embeds them using SentenceTransformer, and indexes them with FAISS for fast similarity search.
 
 ---
 
-## 🚀 Features
+## Features
 
 * **Real-time log streaming:** Follows live logs with `journalctl -f`.
 * **Smart deduplication:** Strips volatile fields (timestamps, PIDs, hostnames) for repeat detection.
@@ -17,7 +17,7 @@ A real-time Linux log monitoring and semantic search tool that streams logs from
 
 ---
 
-## 🧩 Tech Stack
+## Tech Stack
 
 | Component                                     | Purpose                               |
 | --------------------------------------------- | ------------------------------------- |
@@ -29,7 +29,7 @@ A real-time Linux log monitoring and semantic search tool that streams logs from
 
 ---
 
-## ⚙️ Installation
+## Installation
 
 1. **Clone this repository**
 
@@ -52,7 +52,7 @@ A real-time Linux log monitoring and semantic search tool that streams logs from
 
 ---
 
-## 🔍 Usage
+##  Usage
 
 When running, the system automatically:
 
@@ -76,7 +76,7 @@ Enter search query (or 'exit' to quit): failed service restart k=10 display=pret
 
 ---
 
-## 🧠 Example Output
+##  Example Output
 
 ```
 --------------------------------------------------------------------------------
@@ -89,7 +89,7 @@ Top 5 results (display=pretty):
 
 ---
 
-## 🧰 Configuration
+##  Configuration
 
 You can tweak parameters directly in `db.py`:
 
@@ -102,7 +102,7 @@ You can tweak parameters directly in `db.py`:
 
 ---
 
-## 🧑‍💻 Architecture Overview
+## Architecture Overview
 
 ```text
 ┌────────────────────┐
@@ -121,7 +121,7 @@ You can tweak parameters directly in `db.py`:
 
 ---
 
-## 🧾 License
+##  License
 
 This project is licensed under the **GNU General Public License v3.0 (GPLv3)** — see the [LICENSE](./LICENSE) file for details.
 
