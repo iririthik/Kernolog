@@ -1,6 +1,6 @@
 # Kernolog
 
-**Real-time Linux log monitoring and semantic search — powered by AI.**
+**Real-time Linux log monitoring and semantic search **
 
 Kernolog streams live system logs from `journalctl`, deduplicates repeated entries using the Drain3 log template miner, embeds them with a SentenceTransformer model, and stores them in a hybrid SQLite + binary vector store for fast semantic similarity search.
 
